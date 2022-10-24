@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCare</title>
+
+    <link href = "Logo PNG.png" rel = "icon" type = "Icons">
+
+    <!-- Tailwind Dependency -->
+    <link href = "/dist/output.css" rel = "stylesheet">
+    <link href = "input.css" rel = "stylesheet" type = "text/css">
+
+    <!-- Main Stylesheet -->
+    <link href = "styles.css" rel = "stylesheet" type = "text/css">
+
+    <style>
+
+        /* Montserrat */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
+        /* Great Vibes */
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!-- Social Icons by npm -->
+
+    <div class = "navbar">
+        <div class = "container flex">
+
+            <!-- Logo -->
+            <div class = "flex items-center text-4xl">
+                <h1 id = "iCare">
+                    <span id = "i">i</span><span id = "Care">Care</span>
+                </h1>
+            </div>
+             
+            
+            <!-- While it has been a long standing tradition to wrap navigation links in an unordered list <ul> & child <li>s, 
+                with modern semantic elements like <nav>, in most cases this simply adds unnecessary clutter to the HTML and 
+                actively hurts accessibility. See https://css-tricks.com/navigation-in-lists-to-be-or-not-to-be/ for more info. -->
+
+            <nav role = "navigation">    
+                <a class = "Home" href = "#Home">HOME</a>
+                <a class = "About" href = "#About">ABOUT</a>
+                <a class = "Team" href = "#Team">TEAM</a>
+                <a class = "Contact" href = "#Contact">CONTACT</a>
+
+                <span id = "Documentation">
+                    <a href = "#Documentation">DOCUMENTATION</a>
+                </span>
+
+            </nav>
+
+        </div>
+    </div>
+
+
+
+
+    <div>
+        <!-- Water https://www.icarehealthplan.org -->
+    </div>
+
+    <div class = "flex justify-center">
+        <div id = "video">
+            <video autoplay loop muted>
+                <source src = "iCare.mp4" type = "video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class = "quote text-4xl flex justify-center">
+        <h1>Save Earth</h1>
+    </div>
+    
+
+</body>
+</html>
