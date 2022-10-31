@@ -142,7 +142,7 @@ h1 {
 
     padding: 10px 10px;
 
-    clip-path: polygon(51% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
 
     background-color: var(--primary-color);
 }
