@@ -4,6 +4,32 @@
 
 /* 
    ==================
+        FONTS
+   ==================
+*/
+
+@font-face {
+    font-family: "Black Ocean";
+    src: url("black ocean/Black\ Ocean\ One.ttf");
+}
+
+@font-face {
+    font-family: "WaterLily";
+    src: url("waterlily/Waterlily\ Script.ttf");
+}
+
+@font-face {
+    font-family: "Big John";
+    src: url("Big John/Big John  Slim Joe/BIG\ JOHN.otf");
+}
+
+@font-face {
+    font-family: "Brolink";
+    src: url("brolink-font/BrolinkDemo-VGyMZ.otf");
+}
+
+/* 
+   ==================
           ROOT
    ==================
 */
@@ -20,10 +46,12 @@ html {
 
 :root {
     --primary-color: #ffffff;
+    --bg-color: #D8ECFA;
 }
 
 body {
-    background-color: rgba(255, 255, 255, 1);
+    /* background-color: rgba(255, 255, 255, 1); */
+    background-color: var(--bg-color);
 }
 
 a {
@@ -52,8 +80,203 @@ h1 {
    ==================
 */
 
-.quote > h1 {
-    font-family: 'Great Vibes';
+.section-1 {
+    background-color: var(--primary-color);
 }
+
+.sub-section-1 {
+    background-color: var(--bg-color);
+}
+
+
+.container-soft {
+    height: 15rem;
+    width: 40%;
+
+    margin: 150px 0;
+    margin-inline: auto;
+
+    border-radius: 50px;
+    background: var(--primary-color);
+
+    box-shadow:  41px 41px 82px #bebebe,
+             -41px -41px 82px #ffffff;
+
+    padding: 10px 10px;
+}
+
+.head {
+    font-family: 'Black Ocean';
+    font-size: 3.75rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.body {
+    margin: 1em auto;
+}
+
+.sub-container {
+    display: flex;
+    align-items: center;
+}
+
+.sub-container > p {
+    text-align: justify;
+
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+
+.container-soft-empty {
+    height: 10rem;
+    width: 100%;
+
+    margin: 100px 0;
+    margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 10px;
+
+    clip-path: polygon(51% 100%, 0 0, 100% 0);
+
+    background-color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+.class-section {
+    width: max-content;
+    margin-inline: auto;
+}
+
+.class-section > h1 {
+    font-family: 'Brolink';
+    font-size: 3.5rem;
+
+    text-align: center;
+}
+
+.mouse-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    margin: 0 auto;
+}
+
+.mouse {
+    position: relative;
+
+    width: 32px;
+    height: 60px;
+
+    border: solid 4px #000;
+    border-radius: 32px;
+}
+
+.wheel {
+    position: absolute;
+    
+    width: 8px;
+    height: 10px;
+
+    top: 20%;
+    left: 50%;
+
+    background-color: #000;
+    border-radius: 6px;
+
+    transform: translate(-50%, 0);
+
+    animation: scroll 1s linear infinite;
+}
+
+.wheel.active {
+    animation: scroll 1s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    1% {
+        transform: translate(-50%, 0);
+    }
+    20%, 30% {
+        opacity: 1;
+    }
+    90% {
+        transform: translate(-50%, 130%);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.parent-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+
+    top: 0;
+    
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 40px 0;
+}
+
+.box h1 {
+    /* margin: 100px 0; */
+
+    position: absolute;
+    font-size: 6em;
+}
+
+.box h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #0C6390;
+
+    font-family: 'Big John';
+}
+
+.box h1:nth-child(2) {
+    color: #0C6390;
+    animation: fill-up 4s ease-in-out infinite;
+
+    font-family: 'Big John';
+}
+
+@keyframes fill-up {
+    0%, 100% 
+    {
+        clip-path: polygon(0 50%, 10% 50%, 24% 48%, 35% 58%, 51% 46%, 59% 55%, 70% 55%, 83% 46%, 94% 54%, 100% 29%, 100% 100%, 0% 100%);
+    }
+    50% 
+    {
+        clip-path: polygon(0 80%, 9% 54%, 20% 57%, 33% 69%, 46% 53%, 58% 63%, 76% 68%, 86% 68%, 94% 64%, 100% 78%, 100% 100%, 0% 100%);
+    }
+}
+
+
+
 
 

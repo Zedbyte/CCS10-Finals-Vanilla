@@ -7,9 +7,13 @@
 .navbar {
     height: 85px;
     top: 0;
-    z-index: 10;
+    z-index: 1000;
 
     background-color: var(--primary-color);
+
+    position: sticky;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -66,6 +70,9 @@
     --padding: 0.5em;
 
     transition: all 0.2s linear;
+
+    font-family: 'Montserrat';
+    font-weight: bold;
 }
 
 .navbar .link::after {
@@ -91,11 +98,6 @@
 
 
 
-@font-face {
-font-family: "Black Ocean";
-src: url("black ocean/Black\ Ocean\ One.ttf");
-}
-
 #iCare {
     font-family: 'Black Ocean';
     font-size: 6rem;
@@ -106,7 +108,7 @@ src: url("black ocean/Black\ Ocean\ One.ttf");
 }
 
 #Care {
- 
+    color: inherit;
 }
 
 
@@ -139,7 +141,7 @@ src: url("black ocean/Black\ Ocean\ One.ttf");
 
     animation: move 15s linear infinite; */
 
-    background-color: #0099ff;
+    background-color: #0C6390;
 
     transition: all 0.4s linear;
 }
@@ -157,7 +159,7 @@ src: url("black ocean/Black\ Ocean\ One.ttf");
 } */
 
 #Documentation > a:hover {
-   background-color: goldenrod;
+   background-color: #FAC671;
 
-   color: white;
+   color: inherit;
 }
