@@ -1,5 +1,5 @@
 /* @layers names */
-/* Waterlily font (?) */
+
 
 
 /* 
@@ -42,16 +42,28 @@
 
 html {
     scroll-behavior: smooth;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 :root {
     --primary-color: #ffffff;
     --bg-color: #D8ECFA;
+    --blue-shade: #5194BF;
+    --dark: #000;
+    --gold: #ffd700;
 }
 
 body {
     /* background-color: rgba(255, 255, 255, 1); */
     background-color: var(--bg-color);
+
+    
+    /* display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0; */
 }
 
 a {
@@ -87,6 +99,11 @@ h1 {
 .sub-section-1 {
     background-color: var(--bg-color);
 }
+
+
+
+
+
 
 
 .container-soft {
@@ -130,11 +147,18 @@ h1 {
 }
 
 
+
+
+
+
+
+
+
 .container-soft-empty {
     height: 10rem;
     width: 100%;
 
-    margin: 100px 0;
+    margin-top: 100px 0;
     margin-inline: auto;
 
     display: flex;
@@ -147,14 +171,6 @@ h1 {
     background-color: var(--primary-color);
 }
 
-
-
-
-
-
-
-
-
 .class-section {
     width: max-content;
     margin-inline: auto;
@@ -165,6 +181,11 @@ h1 {
     font-size: 3.5rem;
 
     text-align: center;
+    color: var(--dark);
+}
+
+.class-section > h1 > .gold {
+    color: var(--gold);
 }
 
 .mouse-container {
@@ -182,7 +203,7 @@ h1 {
     width: 32px;
     height: 60px;
 
-    border: solid 4px #000;
+    border: solid 4px var(--dark);
     border-radius: 32px;
 }
 
@@ -195,7 +216,7 @@ h1 {
     top: 20%;
     left: 50%;
 
-    background-color: #000;
+    background-color: var(--gold);
     border-radius: 6px;
 
     transform: translate(-50%, 0);
@@ -226,9 +247,7 @@ h1 {
 }
 
 .parent-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .box {
@@ -248,18 +267,18 @@ h1 {
     /* margin: 100px 0; */
 
     position: absolute;
-    font-size: 6em;
+    font-size: 5.4em;
 }
 
 .box h1:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 2px #0C6390;
+    -webkit-text-stroke: 2px var(--blue-shade);
 
     font-family: 'Big John';
 }
 
 .box h1:nth-child(2) {
-    color: #0C6390;
+    color: var(--blue-shade);
     animation: fill-up 4s ease-in-out infinite;
 
     font-family: 'Big John';
@@ -278,5 +297,27 @@ h1 {
 
 
 
+
+/* 
+   ==================
+        BODY GRID 
+   ==================
+*/
+
+main { 
+    flex-grow: 1;
+}
+
+main > article {
+    display: grid;
+    height: 100%;
+
+    grid-template-columns: 2fr 2fr;
+}
+
+main > article > .article-section {
+    height: 100%;
+    border: 1px solid black;
+}
 
 

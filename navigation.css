@@ -13,7 +13,9 @@
 
     position: sticky;
 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+
+    overflow: hidden;
 }
 
 .container {
@@ -83,31 +85,34 @@
   bottom: calc(var(--padding) * -0.5); /*Apparently when you go lower, the line also goes down.*/
 
   height: 3px;
-  border-radius: 10px;
+  border-radius: 100px;
   
   background-color: black;
 
-  transform-origin: 0 100%; /*Remove this to animate from center*/
+  /* transform-origin: 0 100%; Remove this to animate from center */
   transform: scale(0, 1);
-  transition: inherit;
+  transition: all 0.2s linear;
 }
 
 .navbar .link:hover::after {
   transform: scale(1, 1);
 }
 
+.navbar a:hover {
+    font-weight: bold;
+}
 
 
-#iCare {
+.iCare {
     font-family: 'Black Ocean';
     font-size: 6rem;
 }
 
-#i {
+.i {
     color: orange;
 }
 
-#Care {
+.Care {
     color: inherit;
 }
 

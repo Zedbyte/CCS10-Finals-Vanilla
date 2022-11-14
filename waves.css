@@ -4,19 +4,111 @@
    ==================
 */
 
+:root {
+    --primary-color: #ffffff;
+    --bg-color: #D8ECFA;
+    --blue-shade: #5194BF;
+    --dark: #000;
+    --gold: #ffd700;
+}
+
+/* 
+   ==================
+       TITLE START
+   ==================
+*/
+
+.heading-start-wrapper {
+    position: relative;
+}
+
+.heading-start {
+    position: absolute;
+
+    z-index: 100;
+
+    top: 25rem;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+
+    width: 95%;
+}
+
+.heading-start > h1 {
+    font-size: 5em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: var(--primary-color);
+
+    text-align: center;
+}
+
+.heading-start > h1 > .cursor {
+    display: inline-block;
+    
+    background-color: white;
+
+    width: 3px;
+    font-size: 1em;
+
+    margin-left: 0.1rem;
+
+    animation: blink 1s infinite;
+
+    opacity: 1;
+}
+
+@keyframes blink {
+    0% {
+        background-color: white;
+    }
+    49% {
+        background-color: white;
+    }
+    50% {
+        background: transparent;
+    }
+    99% {
+        background: transparent;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+/* 
+   ==================
+        TITLE END
+   ==================
+*/
+
+
+
+
+/* 
+   ==================
+    WAVE BELOW START
+   ==================
+*/
+
 .wrapper {
     position: relative;
 
     width: 100%;
-    height: 600px;
+    height: clamp(600px, 850px, 1000px);
 
     background: #0099ff;
     overflow: hidden;
 
-    background-image: url('ocean.jpg');
+    background-image: url('ocean-sun.jpg');
     background-size: cover;
     background-repeat: no-repeat;    
     background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+
+    transition: all 0.5s linear;
 }
 
 .wrapper .wave {
@@ -64,6 +156,12 @@
     animation: flow 15s linear -5s infinite;
 }
 
+/* 
+   ==================
+    WAVE BELOW END
+   ==================
+*/
+
 
 @keyframes flow {
     0% {
@@ -75,11 +173,17 @@
 }
 
 
+/* 
+   ==================
+    WAVE ABOVE START
+   ==================
+*/
+
 .wrapper-up {
     position: absolute;
 
     width: 100%;
-    height: 150px;
+    height:  clamp(150px, 150px, 300px);
 
     background: #0099ff;
     overflow: hidden;
@@ -129,3 +233,9 @@
 
     animation: flow 15s linear -5s infinite;
 }
+
+/* 
+   ==================
+    WAVE ABOVE END
+   ==================
+*/
