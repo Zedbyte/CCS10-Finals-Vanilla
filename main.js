@@ -52,7 +52,7 @@ let h1TextIndex = 0;
 function typingEffect() {
     heading1.textContent += h1Text.charAt(h1TextIndex);
     h1TextIndex++;
-    setTimeout(typingEffect, 300);
+    setTimeout(typingEffect, 100);
     
 }
 
@@ -61,6 +61,15 @@ function removeCursor() {
     cursor.innerHTML = "";
 }
 
+const h1Line = document.querySelector('.heading-h1')
+
+function underLine() {
+    h1Line.classList.add('active');
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     typingEffect();
+    setTimeout(removeCursor, 7500);
+    setTimeout(underLine, 7800);
 });
+
