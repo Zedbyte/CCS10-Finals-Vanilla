@@ -108,7 +108,7 @@ h1 {
 
 .preloader {
     background-color: var(--dark);
-    background-image: url('preloader.gif');
+    background-image: url('preloaderV2.gif');
     background-position: center;
     background-repeat: no-repeat;
     
