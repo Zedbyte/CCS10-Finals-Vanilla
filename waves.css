@@ -33,12 +33,14 @@
     transform: translate(-50%, -50%);
 
     width: 95%;
+    
+    padding: 0 50px;
 }
 
 .heading-start > h1 {
-    font-size: 5em;
-    font-family: 'Montserrat';
-    font-weight: bold;
+    font-size: 4.5em;
+    font-family: 'Marxure';
+    font-weight: lighter;
     color: var(--primary-color);
 
     text-align: center;
@@ -48,6 +50,8 @@
     border: 5px solid var(--dark);
 
     background-color: rgba(0, 0, 0, 0.5);
+
+    transition: all 0.5s linear;
 }
 
 .heading-start > h1 > .cursor {
@@ -72,9 +76,9 @@
     display: block;
     
     position: absolute;
-    bottom: 2.3em;
+    bottom: 2.5em;
 
-    inset-inline: 0.1em;
+    inset-inline: 1em;
     border-radius: 100px;
 
     background-color: var(--primary-color);
@@ -92,7 +96,7 @@
     position: absolute;
     top: 3.7em;
 
-    inset-inline: 8em;
+    inset-inline: 4em;
     border-radius: 100px;
 
     background-color: var(--primary-color);

@@ -28,6 +28,16 @@
     src: url("brolink-font/BrolinkDemo-VGyMZ.otf");
 }
 
+@font-face {
+    font-family: "Marxure";
+    src: url("Marxure/Marxure-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Zuume";
+    src: url("zuume-rough/Demo_Fonts/Fontspring-DEMO-zuumerough-bold.otf");
+}
+
 /* 
    ==================
           ROOT
