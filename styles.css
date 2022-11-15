@@ -116,6 +116,10 @@ h1 {
     visibility: hidden;
 }
 
+.preloader.inactive.none {
+    display: none;
+}
+
 
 /* 
    ==================

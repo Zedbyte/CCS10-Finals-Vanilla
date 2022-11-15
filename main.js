@@ -6,14 +6,14 @@
 
 const preloader = document.querySelector('.preloader');
 
-document.addEventListener("DOMContentLoaded", () => {
+function preload() {
     preloader.classList.add('inactive');
-})
+}
 
+function addNone() {
+    preloader.classList.add('none');
+}
 //add display none after some time
-
-
-
 
 
 /* 
@@ -94,9 +94,11 @@ function underLine() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    typingEffect();
-    setTimeout(removeCursor, 7500);
-    setTimeout(underLine, 7800);
+    setTimeout(typingEffect, 6000);
+    setTimeout(removeCursor, 12500); //added 5s
+    setTimeout(underLine, 12800); //added 5s
+    setTimeout(preload, 5000);
+    setTimeout(addNone, 8500);
 });
 
 // If preloader is removed, execute typing effect
