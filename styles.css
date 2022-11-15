@@ -88,6 +88,42 @@ h1 {
 
 
 
+/* 
+   ==================
+        PRELOADER 
+   ==================
+*/
+
+
+.preloader {
+    background-color: var(--dark);
+    background-image: url('preloader.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 100vh;
+
+    position: fixed;
+    z-index: 1000;
+
+    transition: all 0.5s linear;
+}
+
+.preloader.inactive {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+
+/* 
+   ==================
+     PRELOADER END 
+   ==================
+*/
+
+
 
 /* 
    ==================
@@ -291,11 +327,11 @@ h1 {
 
 .box:hover .heading-text-fill {
     color: var(--gold);
-    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.4);
+    -webkit-text-stroke: 2px var(--gold);
 }
 
 .box:hover .heading-text-stroke {
-    -webkit-text-stroke: 2px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 2px var(--gold);
 }
 
 /* .box .heading-text-fill:hover ~ .box + .heading-text-stroke {

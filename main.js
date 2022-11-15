@@ -1,3 +1,29 @@
+/* 
+   ==================
+      PRELOADER
+   ==================
+*/
+
+const preloader = document.querySelector('.preloader');
+
+document.addEventListener("DOMContentLoaded", () => {
+    preloader.classList.add('inactive');
+})
+
+//add display none after some time
+
+
+
+
+
+/* 
+   ==================
+    PRELOADER END
+   ==================
+*/
+
+
+
 
 /* 
    ==================
@@ -73,3 +99,4 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(underLine, 7800);
 });
 
+// If preloader is removed, execute typing effect
