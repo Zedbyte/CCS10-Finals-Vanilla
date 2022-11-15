@@ -34,7 +34,8 @@
 
     width: 95%;
     
-    padding: 0 50px;
+    border: 5px solid var(--dark);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .heading-start > h1 {
@@ -47,17 +48,31 @@
 
     line-height: 2;
 
-    border: 5px solid var(--dark);
-
-    background-color: rgba(0, 0, 0, 0.5);
-
     transition: all 0.5s linear;
+
+    background-image: linear-gradient(to right, white, lime, lightgreen, lime, white);
+    background-size: 200% 100%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: colorMove 3s linear infinite;
+}
+
+@keyframes colorMove {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
 }
 
 .heading-start > h1 > .cursor {
     display: inline-block;
     
-    background-color: white;
+    background-color: var(--primary-color);
 
     width: 3px;
     font-size: 1em;
@@ -94,7 +109,7 @@
     display: block;
     
     position: absolute;
-    top: 3.7em;
+    top: 3.5em;
 
     inset-inline: 4em;
     border-radius: 100px;

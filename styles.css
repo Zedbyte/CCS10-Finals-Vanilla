@@ -63,6 +63,7 @@ html {
     --blue-shade: #5194BF;
     --dark: #000;
     --gold: #ffd700;
+    --lime: #90ee90;
 }
 
 body {
@@ -239,6 +240,11 @@ h1 {
 
 .class-section > h1 > .gold {
     color: var(--gold);
+    -webkit-text-stroke: 1px var(--dark);
+}
+
+.class-section > h1 > #numOne {
+    font-family: 'Chivo';
 }
 
 .mouse-container {
@@ -271,6 +277,7 @@ h1 {
 
     background-color: var(--gold);
     border-radius: 6px;
+    border: 1px solid black;
 
     transform: translate(-50%, 0);
 
@@ -403,7 +410,8 @@ section {
 */
 
 #progress-wrapper {
-    background-color: var(--dark);
+    background-color: var(--primary-color);
+    border: 2px solid black;
 
     bottom: 15px;
     right: 15px;
@@ -431,7 +439,7 @@ section {
     height: calc(100% - 15px);
     width: calc(100% - 15px);
 
-    background-color: var(--bg-color);
+    background-color: var(--lime);
 
     border-radius: 50%;
 
